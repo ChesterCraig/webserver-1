@@ -1,0 +1,15 @@
+{
+  "name": "webserver1",
+  "version": "1.0.0",
+  "description": "webserver tutorial",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Chester Craig",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.1",
+    "hbs": "^4.0.1"
+  }
+}
