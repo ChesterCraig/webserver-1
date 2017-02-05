@@ -42,16 +42,23 @@ app.use(express.static(__dirname + '/public'));
 //get request on root
 app.get('/', (request,response) => {
     response.render('home.hbs',{
-        title: "WELCOME"
+        title: "Welcome"
     });
 });
 
 
 app.get('/about', (request,response) => {
     response.render('about.hbs',{
-        title: "ABOUT PAGE"
+        title: "About page"
     });
 });
+
+app.get('/projects', (request,response) => {
+    response.render('projects.hbs',{
+        title: "Projects"
+    });
+});
+
 
 
 //Start server
