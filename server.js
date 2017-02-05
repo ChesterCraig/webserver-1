@@ -3,8 +3,9 @@ const hbs = require("hbs");
 const fs = require("fs");
 
 var app = express();
+var mtncMode = false;
 
-var mtncMode = true;
+const port = process.env.port || 3000;
 
 //set out view engine 
 app.set("view engine", 'hbs');
@@ -53,5 +54,5 @@ app.get('/about', (request,response) => {
 
 //Start server
 app.listen(3000, () => {
-    console.log("Server is running on port 3000")
+    console.log("Server is running on port " + port);
 });
