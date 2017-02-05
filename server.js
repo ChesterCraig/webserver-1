@@ -7,6 +7,8 @@ var mtncMode = false;
 
 const port = process.env.port || 3000;
 
+console.log("starting app on port " + port);
+
 //set out view engine 
 app.set("view engine", 'hbs');
 
