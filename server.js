@@ -55,6 +55,6 @@ app.get('/about', (request,response) => {
 
 
 //Start server
-app.listen(3000, () => {
+app.port(3000, () => {
     console.log("Server is running on port " + port);
 });
